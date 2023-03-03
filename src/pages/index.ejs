@@ -1,0 +1,28 @@
+<%- include('../layout/header.ejs') %>
+<main class="main">
+  <div class="wrapper">
+    <div class="root" id="root">
+      <form class="form form-auth">
+        <h1 class="title form-auth__title">Вход в аккаунт</h1>
+        <label class="form-auth__label_line">
+          <span class="form-auth__label-title">Логин</span>
+          <div class="input form-auth__input">
+            <div class="input__wrapper">
+              <input type="text" placeholder="Логин" class="input__text" name="login">
+            </div>
+          </div>
+        </label>
+        <label class="form-auth__label_line">
+          <span class="form-auth__label-title">Пароль</span>
+          <div class="input form-auth__input">
+            <div class="input__wrapper">
+              <input type="password" placeholder="Пароль" class="input__text" name="password">
+            </div>
+          </div>
+        </label>
+        <button class="btn form-auth__btn" type="submit">Войти</button>
+      </form>
+    </div>
+  </div>
+</main>
+<%- include('../layout/footer.ejs') %>
